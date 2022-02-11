@@ -2,7 +2,7 @@ import express, { response } from 'express';
 import bodyParser from 'body-parser';
 import  mongoose  from 'mongoose';
 import cors from 'cors';
-import postRoutes from './routes/posts.js'
+import postRoutes from './routes/posts.js'//postroutes is the name given by us
 const app= express();
 app.use('/posts',postRoutes)
 app.use(bodyParser.json({limit: '30mb',extended:true}));
